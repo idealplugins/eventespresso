@@ -1,4 +1,4 @@
-# iDEAL plugin for Event Espresso
+# iDEAL plugin for Event Espresso 3
 
 ## Usage
 Use this plugin to add support for iDEAL, Mister Cash, Sofort and other payment methods of 
