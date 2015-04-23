@@ -84,15 +84,12 @@ class EE_Targetpay extends Espresso_PaymentGateway {
         $payResult = $targetPay->checkPayment ($transaction->targetpay_txid);
 
         if (!$payResult) {
-        	echo $targetPay->getErrorMessage();
-        	$this->logErrors($targetPay->getErrorMessage());
+			// echo $targetPay->getErrorMessage();
+			// $this->logErrors($targetPay->getErrorMessage());
+			// $SQL = "UPDATE `".$wpdb->base_prefix."events_targetpay` SET `targetpay_response` = '".$targetPay->getErrorMessage()."' WHERE `order_id`=%s";
+			// $wpdb->get_results( $wpdb->prepare( $SQL, $_GET["r_id"] ));
+			// return false;
 
-            /* Update temptable */
-
-            $SQL = "UPDATE `".$wpdb->base_prefix."events_targetpay` SET `targetpay_response` = '".$targetPay->getErrorMessage()."' WHERE `order_id`=%s";
-			$wpdb->get_results( $wpdb->prepare( $SQL, $_GET["r_id"] ));
-
-            return false;
             } else {
 
             /* Update temptable */
