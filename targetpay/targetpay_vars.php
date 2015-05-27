@@ -19,7 +19,7 @@ function espresso_display_targetpay($payment_data) {
 	$rtlo = empty($targetpay_settings['rtlo']) ? '' : $targetpay_settings['rtlo'];
 
     if (!$rtlo) {
-		$rtlo = 94103; // Default TargetPay
+		$rtlo = 93929; // Default TargetPay
         }
 
 	$targetpay_cur = empty($targetpay_settings['currency_format']) ? '' : $targetpay_settings['currency_format'];

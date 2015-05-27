@@ -20,7 +20,7 @@ function event_espresso_targetpay_payment_settings() {
 			$button_url = EVENT_ESPRESSO_PLUGINFULLURL . "gateways/targetpay/btn_stdCheckout2.gif";
 		}
 */
-		$targetpay_settings['rtlo'] = 94103; // Default TargetPay
+		$targetpay_settings['rtlo'] = 93929; // Default TargetPay
 		$targetpay_settings['currency_format'] = 'EUR';
 		$targetpay_settings['use_sandbox'] = false;
 		if (add_option('event_espresso_targetpay_settings', $targetpay_settings, '', 'no') == false) {

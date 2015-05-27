@@ -77,7 +77,7 @@ class EE_Targetpay extends Espresso_PaymentGateway {
 		$targetpay_settings = get_option('event_espresso_targetpay_settings');
         $rtlo = empty($targetpay_settings['rtlo']) ? '' : $targetpay_settings['rtlo'];
 	    if (!$rtlo) {
-			$rtlo = 94103; // Default TargetPay
+			$rtlo = 93929; // Default TargetPay
 	        }                                      
 
 		$targetPay = new TargetPayCore ($transaction->method, $rtlo,  "71c0ede08d631e269dac7e2b064f92c5", "nl", ($targetpay_settings['use_sandbox']));
